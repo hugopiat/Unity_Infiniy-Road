@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8043210629176729456
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8043210629176729458}
+  - component: {fileID: 8043210629176729459}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8043210629176729458
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8043210629176729456}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8043210629176729459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8043210629176729456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 115d308e8e3fc62469faa1d0e51e8a6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player:
+    player: {fileID: 0}
+    Distance: 0
+    Speed: 20
+    TurnSpeed: 1.5
+    MaxSpeed: 35
+    MinSpeed: 15
+    Taux_Acc_Fre: 0.5
+    CoefficientEvent: 1.5
+  Chrono:
+    temps: 60
+    temps_restant: 60
+  Obstacle:
+  - Prefab: {fileID: 821072868584120076, guid: e7924e7c9bb2b8f43a0bc5b51de6014c, type: 3}
+    Chance: 0
+    _weight: 0
+  - Prefab: {fileID: 2333113964235323121, guid: a24aa0bbef5867742a5d0e251632f368, type: 3}
+    Chance: 0
+    _weight: 0
+  - Prefab: {fileID: 5961276496291698578, guid: 7ac343627d09fa94eb76b9e84851df21, type: 3}
+    Chance: 0
+    _weight: 0
+  Road:
+    Road: {fileID: 3688819128760103909, guid: a0a1cdadcfcf1de46b833a3ed5d1449e, type: 3}
+    PatternRoad:
+    - {fileID: 3515101455274908550, guid: acb7cae969bcf644c90b673de0970dfb, type: 3}
+    - {fileID: 1002196334337778848, guid: c11ebd9fbebe4b34598f627ac455bd29, type: 3}
+    - {fileID: 8366158865376956767, guid: 969894657ab402a4984409cb43500a7f, type: 3}
+  Colors:
+    PlayerMaterial: {fileID: 2100000, guid: 07f44fe3e9c462146a7769b976c50ec4, type: 2}
+    PlayerMaterialBonus: {fileID: 2100000, guid: f3d470108f3c0db46b507028ad0e7186, type: 2}
+    PlayerMaterialMalus: {fileID: 2100000, guid: f4e8aeed3c2823246ae9288a628b6338, type: 2}
+  _current_level_name: 
+  _previous_level_name: 
